@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="SZ7-Xy-ys5">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PT4-HN-vHe" customClass="DetailViewController" customModule="RxFlowExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rlS-AG-4nE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDa-Im-oYg">
+                                <rect key="frame" x="30" y="577" width="315" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.14359413639999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="tO0-Je-pwc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nu-oC-QOv">
+                                <rect key="frame" x="0.0" y="40" width="375" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="WEk-qQ-y5j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.14999999999999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ok, we first need to Setup some stuff for you, so that the App will know you." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tab-ap-Itz">
+                                <rect key="frame" x="30" y="192" width="315" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="J6J-ra-XRz"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.14359413639999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fux-gX-4HC">
+                                <rect key="frame" x="30" y="487" width="315" height="60"/>
+                                <color key="backgroundColor" red="0.11011595120000001" green="0.68208705359999999" blue="0.48825417539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Rax-HA-6Qr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Child Flow">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oDa-Im-oYg" firstAttribute="top" secondItem="fux-gX-4HC" secondAttribute="bottom" constant="30" id="2pQ-1a-asr"/>
+                            <constraint firstItem="2nu-oC-QOv" firstAttribute="leading" secondItem="rlS-AG-4nE" secondAttribute="leading" id="CDc-sA-nUH"/>
+                            <constraint firstItem="oDa-Im-oYg" firstAttribute="leading" secondItem="fLW-C4-1aW" secondAttribute="leading" constant="30" id="JaL-jD-TMV"/>
+                            <constraint firstItem="tab-ap-Itz" firstAttribute="leading" secondItem="fLW-C4-1aW" secondAttribute="leading" constant="30" id="NwQ-0q-6MZ"/>
+                            <constraint firstItem="fux-gX-4HC" firstAttribute="trailing" secondItem="oDa-Im-oYg" secondAttribute="trailing" id="VJ1-YZ-pb0"/>
+                            <constraint firstItem="fLW-C4-1aW" firstAttribute="trailing" secondItem="oDa-Im-oYg" secondAttribute="trailing" constant="30" id="eOL-D7-fa5"/>
+                            <constraint firstItem="2nu-oC-QOv" firstAttribute="top" secondItem="fLW-C4-1aW" secondAttribute="top" constant="20" id="hRb-Vo-404"/>
+                            <constraint firstItem="tab-ap-Itz" firstAttribute="top" secondItem="2nu-oC-QOv" secondAttribute="bottom" constant="30" id="jOY-IR-6Kg"/>
+                            <constraint firstItem="fux-gX-4HC" firstAttribute="leading" secondItem="oDa-Im-oYg" secondAttribute="leading" id="kbb-IQ-wvA"/>
+                            <constraint firstItem="fLW-C4-1aW" firstAttribute="trailing" secondItem="oDa-Im-oYg" secondAttribute="trailing" constant="30" id="ncV-YJ-keP"/>
+                            <constraint firstItem="fLW-C4-1aW" firstAttribute="bottom" secondItem="oDa-Im-oYg" secondAttribute="bottom" constant="30" id="tOY-UA-tOR"/>
+                            <constraint firstItem="oDa-Im-oYg" firstAttribute="leading" secondItem="fLW-C4-1aW" secondAttribute="leading" constant="30" id="tTu-Je-vL2"/>
+                            <constraint firstItem="fLW-C4-1aW" firstAttribute="trailing" secondItem="tab-ap-Itz" secondAttribute="trailing" constant="30" id="vdn-SJ-Hmb"/>
+                            <constraint firstItem="2nu-oC-QOv" firstAttribute="centerX" secondItem="tab-ap-Itz" secondAttribute="centerX" id="xX2-wk-l0S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fLW-C4-1aW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rex-u2-1p2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="202"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import RxFlow
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    let disposeBag = DisposeBag()
+    var coordinator = FlowCoordinator()
+    var viewModel = AppViewModel()
+    
+  lazy var appFlow = {
+    return AppFlow(with: self.viewModel)
+    }()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Flows.whenReady(flow1: appFlow) { [unowned self] (root) in
+            self.window?.rootViewController = root
+        }
+        
+        coordinator.coordinate(flow: appFlow, with:  OneStepper(withSingleStep: AppSteps.intro))
         return true
     }
 
@@ -43,4 +57,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 

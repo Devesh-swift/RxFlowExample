@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "2.0.0",
+  "iOS" : [
+    {
+      "name" : "RxFlow",
+      "hash" : "ac6cbc65513877f590fe3569b48677c0f80e5de1df7010b17b315ff2e5421bf3"
+    }
+  ]
+}
