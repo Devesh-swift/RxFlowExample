@@ -26,6 +26,7 @@
 		905CDA82223794D700BEC9FF /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 905CDA80223794D700BEC9FF /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		905CDA8422379E2900BEC9FF /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905CDA8322379E2900BEC9FF /* Detail.storyboard */; };
 		905CDA8622379E6000BEC9FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905CDA8522379E6000BEC9FF /* DetailViewController.swift */; };
+		905CDAB222396D7D00BEC9FF /* RefrenceCode.zip in Resources */ = {isa = PBXBuildFile; fileRef = 905CDAB122396D7D00BEC9FF /* RefrenceCode.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +64,7 @@
 		905CDA80223794D700BEC9FF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		905CDA8322379E2900BEC9FF /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		905CDA8522379E6000BEC9FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		905CDAB122396D7D00BEC9FF /* RefrenceCode.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = RefrenceCode.zip; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		902A3C2522302EF600176512 /* RxFlowPoc */ = {
 			isa = PBXGroup;
 			children = (
+				905CDAB122396D7D00BEC9FF /* RefrenceCode.zip */,
 				905CDA742237886E00BEC9FF /* Storyboard */,
 				902A3C2622302EF600176512 /* AppDelegate.swift */,
 				902A3C2A22302EF600176512 /* Main.storyboard */,
@@ -204,6 +207,7 @@
 			files = (
 				902A3C3122302EF800176512 /* LaunchScreen.storyboard in Resources */,
 				902A3C2E22302EF800176512 /* Assets.xcassets in Resources */,
+				905CDAB222396D7D00BEC9FF /* RefrenceCode.zip in Resources */,
 				902A3C2C22302EF600176512 /* Main.storyboard in Resources */,
 				905CDA8422379E2900BEC9FF /* Detail.storyboard in Resources */,
 			);
